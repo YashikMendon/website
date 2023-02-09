@@ -1,0 +1,359 @@
+@import "path/to/font-awesome/less/font-awesome.less";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(52, 52, 52);
+}
+
+.navbar>h2 {
+    padding-left: 2rem;
+    color: white;
+}
+
+.header {
+    color: white;
+}
+
+.mainContainer,
+li {
+    display: flex;
+    color: white;
+    padding: 0.8rem;
+
+}
+
+.bgImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("assets/assets/intro-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+
+}
+
+.imgText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 23px;
+    color: whitesmoke;
+}
+
+.imageText>h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: rgb(69, 164, 19);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: all 500ms ease;
+}
+
+.info:hover {
+    color: #ff7a59;
+    border: #ff7a59 solid 1px;
+    background: #fff;
+}
+
+.secContainer {
+    margin-bottom: 10rem;
+    margin-left: 5rem;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: 12px;
+
+}
+
+.thirdImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 2rem
+}
+
+.image1,
+.image2 {
+    margin: 2rem;
+    width: 50%;
+    margin-bottom: 6rem;
+}
+
+.image1>h2,
+.image2>h2 {
+    margin-bottom: 1rem;
+}
+
+
+.secImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.secContainerbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: rgb(69, 164, 19);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: all 500ms ease;
+
+}
+
+.secContainerbtn:hover {
+    color: #ff7a59;
+    border: #ff7a59 solid 1px;
+    background: #fff;
+}
+
+li:hover {
+    color: orange;
+    cursor: pointer;
+
+}
+
+.my-img {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 12px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.servicesSection {
+    background-color: rgb(69, 164, 19);
+}
+
+.servimg1,
+.servimg2,
+.servimg3,
+.servimg4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-bottom: 20%;
+}
+
+.servHead>h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servHead>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+.servAlign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.divAlign{
+    margin-bottom: 10%;
+}
+
+.tabBtn{
+    font-size: 10px;
+    padding: 10px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(198, 195, 195);
+    transition: all 500ms ease;
+    margin:6px
+
+}
+.projSection{
+  
+}
+.projHead>h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.projHead>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+
+}
+.tabs{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 2px;
+    margin-top: 1%;
+}
+
+.tabBtn:hover{
+    background-color: rgb(69, 164, 19);
+}
+
+.projImages{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.projImages-row{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+    margin-left: 27%;
+    margin-top: 2%;
+   
+}
+
+.column-img{
+    width: 180px;
+    height: 150px;
+    margin-top: 4%;
+
+
+}
+
+.testimonialsSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image:url('assets/assets/testimonials-bg.jpg')  ; */
+    background-color:  rgb(69, 164, 19) ;
+    /* opacity: 0.4; */
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+
+}
+
+.testHead>h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .containerForm {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+  .containerForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainHeading>h2>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.headingAlign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+}
