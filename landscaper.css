@@ -200,12 +200,14 @@ a {
     align-items: center;
 }
 
+
 .servHead>p {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1%;
 }
+
 
 .servAlign {
     display: flex;
@@ -227,7 +229,7 @@ a {
     border: none;
     background-color: rgb(198, 195, 195);
     transition: all 500ms ease;
-    margin: 6px
+    margin: 6px;
 }
 
 .projSection {}
@@ -247,8 +249,10 @@ a {
 
 }
 
+
 .tabs {
     display: flex;
+    justify-content: center;
     justify-content: center;
     align-items: center;
     margin: 2px;
@@ -265,7 +269,6 @@ a {
 
 }
 
-
 .projImages-row {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -273,15 +276,12 @@ a {
     grid-gap: 15px;
     margin-left: 27%;
     margin-top: 2%;
-
 }
 
 .column-img {
     width: 180px;
     height: 150px;
     margin-top: 4%;
-
-
 }
 
 .testimonialsSection {
@@ -289,6 +289,7 @@ a {
     justify-content: center;
     align-items: center;
     /* background-image:url('assets/assets/testimonials-bg.jpg')  ; */
+    background-color: rgb(69, 164, 19);
     background-color: rgb(69, 164, 19);
     /* opacity: 0.4; */
     z-index: 3;
@@ -307,7 +308,7 @@ a {
 input[type=text],
 select,
 textarea {
-    width: 100%;
+    /* width: 100%; */
     /* Full width */
     padding: 12px;
     /* Some padding */
@@ -324,6 +325,31 @@ textarea {
 }
 
 /* Style the submit button with a specific background color etc */
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 22rem;
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+}
+
+textarea{
+    width: 45rem;
+}
+
+/* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: #04AA6D;
     color: white;
@@ -331,6 +357,10 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -360,6 +390,7 @@ input[type=submit]:hover {
     align-items: center;
 }
 
+
 .mainHeading{
     display: flex;
     flex-direction: column;
@@ -367,7 +398,7 @@ input[type=submit]:hover {
     align-items: center;
 }
  .mainHeading>h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
 }
 /*
 .mainHeading > p2{
@@ -394,4 +425,76 @@ input[type=submit]:hover {
 
 .contactHeading > h4{
     margin-bottom: 0.5rem;
+}
+
+.footerMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+    background-color: rgb(52, 52, 52);
+}
+
+.space{
+    padding: 12px;
+    margin:12px;
+    border-radius: 100%;
+    background-color: blue;
+    color: #04AA6D;
+    background-color: rgb(78, 75, 75);
+    cursor: pointer;
+}
+
+.footerAlign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-left: 25%;
+}
+
+.copywrite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 30%;
+    margin-left: -150%;
+    color:whitesmoke;
+    padding: 6px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form > h4{
+    margin-bottom: 1rem;
+}
+
+.name-email-form{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.custom-border{
+    border-bottom: 2px solid #04AA6D;
+    width: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.testHead > .custom-border{
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-self: center;
 }

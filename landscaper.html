@@ -24,7 +24,9 @@
                 <a href="#projId">
                     <li>GALLERY</li>
                 </a>
-                <li>TESTIMONIALS</li>
+                <a href="#testimonialID">
+                    <li>TESTIMONIALS</li>
+                </a>
                 <li>CONTACT</li>
             </div>
 
@@ -154,9 +156,10 @@
                 </div>
             </div>
 
-            <div class="testimonialsSection">
+            <div class="testimonialsSection" id="testimonialID">
                 <div class="testHead">
                     <h2 style="color:white">Testimonials</h2>
+                    <div class="custom-border"></div>
                     <p style="color:white"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus enim
                         quasi dolore, minus cumque consectetur, error ex molestiae, distinctio vero fuga? Iusto
                         repellendus laborum ad reprehenderit obcaecati illum modi eos?</p>
@@ -166,6 +169,7 @@
             <div class="containerForm">
                 <div class="mainHeading">
                     <h2>Contact Us</h2>
+                    <div class="custom-border"></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum dignissimos ex,
                         reiciendis</p>
                 </div>
@@ -188,24 +192,33 @@
                 </div>
                 <div class="contact-form">
                     <h4>LEAVE US A MESSAGE</h2>
-                    <form action="">
-
-                        <label for="fname">Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                        <label for="lname">Email</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                        <label for="subject">Message</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.."
+                    <form action="#">
+                        <div class="name-email-form">
+                            <input type="text" id="fname" name="firstname" placeholder="Name">
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <textarea id="subject" name="subject" placeholder="Message"
                             style="height:200px"></textarea>
-
-                        <input type="submit" value="Submit">
+                        <div class="submit-btn">
+                            <input type="submit" value="Submit">
+                        </div>
 
                     </form>
                 </div>
 
 
+            </div>
+
+            <div class="footerMain">
+                <div class="footerAlign">
+                    <i class="space fa fa-facebook"></i>
+                    <i class="space fa fa-twitter"></i>
+                    <i class="space fa fa-google-plus"></i>
+                </div>
+                <div class="">
+                    <i class="copywrite fa fa-sharp fa-regular fa-copyright"> <span style="color: white;">
+                            2016 Landscaper.Designed by TemplateWire</span></i>
+                </div>
             </div>
 
 
