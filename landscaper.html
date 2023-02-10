@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="landscaper.css">
-    <title>Document</title>
+    <title>Landscape Task</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -92,14 +93,14 @@
             <div class="servAlign">
                 <div class="divAlign">
                     <img class="servimg1" src="assets/assets/about-2.jpg" alt="">
-                    <h3 style="color:white " >Lawn Care</h3>
+                    <h3 style="color:white ">Lawn Care</h3>
                     <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quisquam
                         fuga soluta porro dicta
                         fugit, dolorem quibusdam labore veritatis quod.</p>
                 </div>
                 <div class="divAlign">
                     <img class="servimg2" src="assets/assets/about-1.jpg" alt="">
-                    <h3 style="color:white " >Landscape Design</h3>
+                    <h3 style="color:white ">Landscape Design</h3>
 
                     <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quisquam
                         fuga soluta porro dicta
@@ -108,7 +109,7 @@
                 </div>
                 <div class="divAlign">
                     <img class="servimg3" src="assets/assets/about-2.jpg" alt="">
-                    <h3 style="color:white " >Tree Care</h3>
+                    <h3 style="color:white ">Tree Care</h3>
 
                     <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quisquam
                         fuga soluta porro dicta
@@ -117,7 +118,7 @@
                 </div>
                 <div class="divAlign">
                     <img class="servimg4" src="assets/assets/about-2.jpg" alt="">
-                    <h3 style="color:white " >Spring & Fall Cleanup</h3>
+                    <h3 style="color:white ">Spring & Fall Cleanup</h3>
 
                     <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quisquam
                         fuga soluta porro dicta
@@ -163,20 +164,66 @@
                 </div>
             </div>
 
-            <div class="testimonialsSection" id="testimonialID">
-                <div class="testHead">
-                    <h2 style="color:white">Testimonials</h2>
-                    <div class="custom-border"></div>
-                    <p style="color:white"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus enim
-                        quasi dolore, minus cumque consectetur, error ex molestiae, distinctio vero fuga? Iusto
-                        repellendus laborum ad reprehenderit obcaecati illum modi eos?</p>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="testimonialsSection" id="testimonialID">
+                        <h2 style="color:white">Testimonials</h2>
+                        <div class="custom-white-border"></div>
+                        <p style="color:white"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus enim
+                            quasi dolore, minus cumque consectetur, error ex molestiae, distinctio vero fuga? Iusto
+                            repellendus laborum ad reprehenderit obcaecati illum modi eos?</p>
+                    </div>
                 </div>
 
+                <div class="mySlides fade">
+                    <div class="testimonialsSection" id="testimonialID">
+                        <h2 style="color:white">Testimonials</h2>
+                        <div class="custom-white-border"></div>
+                        <p style="color:white"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus enim
+                            quasi dolore, minus cumque consectetur, error ex molestiae, distinctio vero fuga? Iusto
+                            repellendus laborum ad reprehenderit obcaecati illum modi eos?</p>
+                        <div class="slideshow-text">Caption Two</div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="testimonialsSection" id="testimonialID">
+                        <h2 style="color:white">Testimonials</h2>
+                        <div class="custom-white-border"></div>
+                        <p style="color:white"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus enim
+                            quasi dolore, minus cumque consectetur, error ex molestiae, distinctio vero fuga? Iusto
+                            repellendus laborum ad reprehenderit obcaecati illum modi eos?</p>
+                        <div class="slideshow-text">Caption Three</div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="testimonialsSection" id="testimonialID">
+                        <h2 style="color:white">Testimonials</h2>
+                        <div class="custom-white-border"></div>
+                        <p style="color:white"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus enim
+                            quasi dolore, minus cumque consectetur, error ex molestiae, distinctio vero fuga? Iusto
+                            repellendus laborum ad reprehenderit obcaecati illum modi eos?</p>
+                        <div class="slideshow-text">Caption Four</div>
+                    </div>
+                </div>
+                <br>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
             </div>
+
             <div class="containerForm">
                 <div class="mainHeading">
                     <h2>Contact Us</h2>
-                    <div class="custom-border"></div>
+                    <div class="custom-green-border"></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum dignissimos ex,
                         reiciendis</p>
                 </div>
@@ -199,18 +246,17 @@
                 </div>
                 <div class="contact-form">
                     <h4>LEAVE US A MESSAGE</h2>
-                    <form action="#">
-                        <div class="name-email-form">
-                            <input type="text" id="fname" name="firstname" placeholder="Name">
-                            <input type="email" id="email" name="email" placeholder="Email">
-                        </div>
-                        <textarea id="subject" name="subject" placeholder="Message"
-                            style="height:200px"></textarea>
-                        <div class="submit-btn">
-                            <input type="submit" value="Submit">
-                        </div>
+                        <form action="#">
+                            <div class="name-email-form">
+                                <input type="text" id="fname" name="firstname" placeholder="Name">
+                                <input type="email" id="email" name="email" placeholder="Email">
+                            </div>
+                            <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+                            <div class="submit-btn">
+                                <input type="submit" value="Submit">
+                            </div>
 
-                    </form>
+                        </form>
                 </div>
 
 
@@ -227,8 +273,6 @@
                             2016 Landscaper.Designed by TemplateWire</span></i>
                 </div>
             </div>
-
-
         </div>
 
     </div>

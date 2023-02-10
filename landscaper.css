@@ -228,10 +228,11 @@ a {
 
 
 }
-.divAlign{
+
+.divAlign {
     margin-left: 3rem;
-    gap:0.5rem;
-    margin-bottom:1rem;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .divAlign>p {
@@ -310,27 +311,6 @@ p {
     margin-top: 4%;
 }
 
-.testimonialsSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-image:url('assets/assets/testimonials-bg.jpg')  ; */
-    background-color: rgb(69, 164, 19);
-    background-color: rgb(69, 164, 19);
-    /* opacity: 0.4; */
-    z-index: 3;
-    width: 100%;
-    height: 100%;
-
-}
-
-.testHead>h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-}
-
 input[type=text],
 select,
 textarea {
@@ -371,7 +351,7 @@ textarea {
     /* Bottom margin */
 }
 
-textarea{
+textarea {
     width: 45rem;
 }
 
@@ -386,8 +366,7 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-}
+input[type=submit]:hover {}
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
@@ -417,15 +396,13 @@ input[type=submit]:hover {
 }
 
 
-.mainHeading{
+.mainHeading {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
- .mainHeading>h2 {
-    margin-bottom: 8px;
-}
+
 /*
 .mainHeading > p2{
     display: flex;
@@ -441,7 +418,7 @@ input[type=submit]:hover {
     gap: 2rem;
 }
 
-.contactHeading{
+.contactHeading {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -449,7 +426,7 @@ input[type=submit]:hover {
     gap: 0.5rem;
 }
 
-.contactHeading > h4{
+.contactHeading>h4 {
     margin-bottom: 0.5rem;
 }
 
@@ -494,36 +471,120 @@ input[type=submit]:hover {
     padding: 6px;
 }
 
-.contact-form{
+.contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.contact-form > h4{
+.contact-form>h4 {
     margin-bottom: 1rem;
 }
 
-.name-email-form{
+.name-email-form {
     display: flex;
     align-items: center;
     gap: 1.25rem;
 }
 
-.submit-btn{
+.submit-btn {
     display: flex;
     justify-content: center;
 }
 
-.custom-border{
+.custom-green-border {
     border-bottom: 2px solid #04AA6D;
     width: 2.5rem;
     margin-bottom: 1rem;
+    margin-top: 8px;
 }
 
-.testHead > .custom-border{
+.custom-white-border {
     border-bottom: 2px solid white;
+    width: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 8px;
+}
+
+/* Slideshow */
+.testimonialsSection {
     display: flex;
-    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image:url('assets/assets/testimonials-bg.jpg'); */
+    background-color: rgb(69, 164, 19);
+    opacity: 0.4;
+    /* z-index: 3; */
+    width: 100%;
+    height: 100%;
+}
+
+.testimonialsSection>h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    background-image: url('assets/assets/testimonials-bg.jpg');
+    background-repeat: no-repeat;
+    background-color: rgb(69, 164, 19);
+    /* width: 100%; */
+    height: 70vh;
+}
+
+/* Caption text */
+.slideshow-text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
